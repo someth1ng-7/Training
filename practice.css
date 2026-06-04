@@ -1,0 +1,16 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(163, 210, 88);
+} 
+p{
+    margin: 100;
+    border: 20;
+    text-align: center;
+    padding
+}
+

@@ -1,0 +1,47 @@
+.card{
+    height: 350px;
+    width: 500px;
+    background-color:rgb(255, 255, 255);
+
+}
+body{
+    background-color: rgb(147, 178, 205);
+}
+
+.card{
+    text-align: center;
+    padding: 30px;
+    background-color:rgb(255, 255, 255);
+
+
+
+}
+img{
+    height: 100px ;
+    width: 100px;
+    border-radius: 50%;
+}
+h1{
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+    padding: 0px;
+    font-size: 13px;
+}
+h2{
+    font-size: small;
+    font-style: normal;
+}
+button{
+    width:100%;
+    border: none;
+    padding:20px;
+    background-color: rgb(107, 107, 239);
+    border-radius:20px;
+    color: aliceblue;
+}
+
