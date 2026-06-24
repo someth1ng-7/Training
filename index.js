@@ -154,13 +154,79 @@
 // }
 // arrow()
 
-const fetchData = async()=>{
-  const data= await fetch("https://dummyjson.com/users")
-  const res= await data.json()
-  // console.log(res.users[1].id);
-  console.log(res.user);
-  res.users.map(user =>{
-    console.log(user.id);
-  })
-}
-fetchData(); 
+// const fetchData = async()=>{
+//   const data= await fetch("https://dummyjson.com/users")
+//   const res= await data.json()
+//   // console.log(res.users[1].id);
+//   console.log(res.user);
+//   res.users.map(user =>{
+//     console.log(user.id);
+//   })
+// }
+// fetchData(); 
+
+// const getUsers = async() => {
+//   const response = await fetch("https://dummyjson.com/users")
+//   const data = await response.json();
+//   console.log(data);
+
+//   const tableBody= document.getElementById("tableBody");
+
+//   tableBody.innerHTML= data.users
+//   .map(user =>
+//     `<tr>
+//       <td>${user.id}</td>
+//       <td> ${user.firstName}</td>
+//       <td>${user.email}</td>
+//     </tr>` 
+//   )
+//   .join("");
+// };
+
+// getUsers();
+
+// const getProducts = async () => {
+//     const response = await fetch("https://dummyjson.com/products");
+//     const data = await response.json();
+//     console.log(data.products)
+//     const productContainer = document.querySelector("#productContainer");
+//     console.log(productContainer)
+//     productContainer.innerHTML = data.products.map(product =>  
+//       `
+//         <div class="card">
+//             <img src="${product.thumbnail}" alt="${product.title}">
+//             <h3>${product.title}</h3>
+//             <p>$${product.price}</p>
+//             <button>Buy Now</button>
+//         </div>
+//     `).join("");
+// };
+
+// getProducts(); 
+
+const getUsers = async() =>{
+    const response = await fetch("https://dummyjson.com/users");
+    const data = await response.json();
+    console.log(data);
+    const tableBody = document.getElementById
+    ("tableBody");
+    tableBody.innerHTML = data.users.map(user =>
+        `<tr>
+        <td>${user.id}</td>
+        <td>${user.firstName}</td>
+        <td>${user.email}</td>
+        </tr>`
+    )
+.join("");
+};
+// getUsers();
+
+// const nameInput = document.querySelector(".name")
+// const output = document.querySelector(".output")
+const submitButton = document.querySelector(".submit")
+
+submitButton.addEventListener("click",() =>{
+// nameInput.addEventListener("input",() =>{
+//   output.innerText = nameInput.value
+    getUsers();
+})
